@@ -1,5 +1,7 @@
 # Book Store
 
+https://github.com/user-attachments/assets/7340b722-3fc1-46a9-993f-d64769fc4004
+
 ## Features
 - Browse books anonymously
 - Register an account to add books to your favorites
