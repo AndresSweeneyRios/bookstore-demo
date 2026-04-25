@@ -17,6 +17,7 @@
 - Nexus (GraphQL server schema)
 - Prisma (ORM, migrations)
 - Zod (form validation)
+- NGINX
 - React
 - Vite
 - Docker
