@@ -1,0 +1,84 @@
+{
+  "name": "@org/backend",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "prune-lockfile": {
+        "dependsOn": [
+          "build"
+        ],
+        "cache": true,
+        "executor": "@nx/js:prune-lockfile",
+        "outputs": [
+          "{workspaceRoot}/apps/backend/dist/package.json",
+          "{workspaceRoot}/apps/backend/dist/package-lock.json"
+        ],
+        "options": {
+          "buildTarget": "build"
+        }
+      },
+      "copy-workspace-modules": {
+        "dependsOn": [
+          "build"
+        ],
+        "cache": true,
+        "outputs": [
+          "{workspaceRoot}/apps/backend/dist/workspace_modules"
+        ],
+        "executor": "@nx/js:copy-workspace-modules",
+        "options": {
+          "buildTarget": "build"
+        }
+      },
+      "prune": {
+        "dependsOn": [
+          "prune-lockfile",
+          "copy-workspace-modules"
+        ],
+        "executor": "nx:noop"
+      },
+      "build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "node scripts/build.mjs",
+          "output": "{workspaceRoot}/apps/backend/dist",
+          "cwd": "apps/backend"
+        }
+      },
+      "dev": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "node scripts/dev-server.mjs",
+          "cwd": "apps/backend"
+        }
+      },
+      "test": {
+        "options": {
+          "passWithNoTests": true
+        }
+      },
+      "prisma-studio": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "prisma studio",
+          "cwd": "apps/backend"
+        }
+      },
+      "set-admin": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "node scripts/set-admin.mjs",
+          "cwd": "apps/backend"
+        }
+      },
+      "set-default-books": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "node scripts/set-default-books.mjs",
+          "cwd": "apps/backend"
+        }
+      }
+    }
+  }
+}

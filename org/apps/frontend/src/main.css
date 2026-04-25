@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: rgb(22, 22, 22);
+  --light: rgb(218, 213, 204);
+  --text: rgb(122, 119, 113);
+
+  background-color: var(--dark);
+  color: var(--light);
+
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light);
+}
+
+p {
+  color: var(--text);
+}
+
+:root, body, #root {
+  min-height: 100vh;
+}
+
+small {
+  color: rgb(131, 131, 131);
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 2.5vw;
+  }
+}

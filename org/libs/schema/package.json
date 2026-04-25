@@ -1,0 +1,19 @@
+{
+  "name": "@org/schema",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "nx:run-commands",
+        "outputs": ["{workspaceRoot}/libs/schema/dist"],
+        "options": {
+          "command": "node build.mjs && tsc -p tsconfig.lib.json",
+          "cwd": "libs/schema"
+        }
+      }
+    }
+  }
+}

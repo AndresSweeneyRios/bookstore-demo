@@ -1,0 +1,34 @@
+.button {
+  outline: none;
+  border: 1px solid rgb(56, 56, 56);
+  background-color: rgb(41, 41, 41);
+  color: inherit;
+  padding: 0.8em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 0.15em;
+  user-select: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: rgb(94, 94, 94);
+}
+
+.button span {
+  font-size: 1.2em;
+}
+
+.button svg {
+  height: 1.2em;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.3;
+}

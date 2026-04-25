@@ -1,0 +1,11 @@
+nav {
+  position: sticky;
+  display: flex;
+  padding: 0 4rem;
+  margin-top: 4rem;
+}
+
+nav .input {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

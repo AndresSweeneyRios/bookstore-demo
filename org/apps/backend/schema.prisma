@@ -1,0 +1,66 @@
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./prisma-client"
+  binaryTargets = ["native"]
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  email String @unique
+  displayName String @unique
+  passwordHash String
+  createdAt DateTime @default(now())
+  
+  favorite Favorite[]
+  refreshToken RefreshToken[]
+  userRoles UserRoles[]
+
+  @@index([email])
+}
+
+model UserRoles {
+  id Int @id @default(autoincrement())
+  userId Int
+  role String
+  
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model Book {
+  id Int @id @default(autoincrement())
+  title String
+  author String
+  description String
+  yearPublished Int
+  uri String
+  favorite Favorite[]
+}
+
+model Favorite {
+  id Int @id @default(autoincrement())
+  userId Int
+  bookId Int
+
+  user User @relation(fields: [userId], references: [id])
+  book Book @relation(fields: [bookId], references: [id])
+
+  @@index([userId])
+}
+
+model RefreshToken {
+  jti String @id
+  userId Int
+  createdAt DateTime
+  expiresAt DateTime
+
+  user User @relation(fields: [userId], references: [id])
+  
+  @@index([userId])
+}

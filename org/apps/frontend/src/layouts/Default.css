@@ -1,0 +1,12 @@
+#default-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 100vh;
+}
+
+#default-layout-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0 4rem;
+}

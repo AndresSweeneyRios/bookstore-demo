@@ -1,0 +1,17 @@
+#book-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+#book-layout-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

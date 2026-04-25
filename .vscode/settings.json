@@ -1,0 +1,12 @@
+{
+  "github.copilot.enable": {
+    "*": false,
+  },
+  "nxConsole.nxWorkspacePath": "org",
+  "files.associations": {
+    "**/prisma-client/schema.prisma": "plaintext",
+  },
+  "files.watcherExclude": {
+    "**/prisma-client/schema.prisma": true
+  },
+}

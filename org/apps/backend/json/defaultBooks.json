@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "description": "Classic children's novel written in the mid-19th century. The story follows a young girl named Alice who, feeling bored and sleepy while sitting by a riverbank, encounters a White Rabbit and follows it down a rabbit hole, plunging into a fantastical world filled with curious creatures and whimsical adventures. The opening of the book introduces Alice as she daydreams about her surroundings before spotting the White Rabbit, who is both flustered and animated. Curious, Alice pursues the Rabbit and finds herself tumbling down a deep rabbit hole, leading to a curious hall filled with doors, all locked. After experiencing a series of bizarre changes in size from eating and drinking mysterious substances, she begins exploring this new world, initially frustrated by her newfound challenges as she navigates her size and the peculiar inhabitants she meets. The narrative sets the tone for Alice's whimsical and often nonsensical adventures that characterize the entire tale.",
+    "yearPublished": 1865,
+    "uri": ""
+  },
+  {
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "description": "Tragic play written in the late 16th century. The story revolves around Prince Hamlet, who grapples with deep existential questions and personal turmoil in the wake of his father’s death and his mother’s hasty remarriage to his uncle, Claudius, who has ascended to the throne. Themes of revenge, madness, and the complexities of human emotion are central to the narrative, highlighting Shakespeare's exploration of the human psyche. At the start of the play, the scene is set in Elsinore, Denmark, where sentinels encounter a ghost resembling the deceased King Hamlet. The ghost's appearance raises tension and speculation among the guards, particularly Horatio, who insists they need to inform Prince Hamlet. In the subsequent court scene, King Claudius attempts to address Hamlet's grief and urges him to move past his father's death and stay in Denmark. Meanwhile, Hamlet's disdain for his uncle's marriage is palpable. In a moment of solitude, Hamlet reveals his despair, contemplating the burden of existence and expressing a wish that he could disappear. The opening establishes a tone of conflict and foreboding, drawing the audience into Hamlet's struggle with grief, morality, and the pursuit of vengeance.",
+    "yearPublished": 1600,
+    "uri": ""
+  },
+  {
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "description": "Novel written in the mid-19th century. The story follows Ishmael, a sailor on a whaling voyage, who seeks adventure and escape from his gloomy life on land. As he embarks on this journey, he becomes drawn into the complex world of whaling and is introduced to the ominous figure of Captain Ahab, whose obsession with a legendary white whale ultimately drives the narrative. At the start of the novel, Ishmael introduces himself and shares his philosophy about the sea as a remedy for his melancholic disposition. He muses on the magnetic pull of the ocean, describing not only his own urge to set sail but also the collective longing of city dwellers for the water. Ishmael's journey takes him to New Bedford, where he experiences a series of humorous and strange encounters while seeking lodging before joining a whaling ship. As he navigates his way through the town, he is introduced to Queequeg, a tattooed harpooner with a mysterious past, setting the stage for a unique friendship that unfolds amidst the backdrop of whaling adventures.",
+    "yearPublished": 1851,
+    "uri": ""
+  }
+]

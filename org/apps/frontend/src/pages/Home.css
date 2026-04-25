@@ -1,0 +1,83 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#home .books {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#home .book {
+  width: 25em;
+  height: 19.2em;
+  max-width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgb(56, 56, 56);
+  background-color: rgb(24, 24, 24);
+  color: inherit;
+  padding: 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  border-radius: 0.15em;
+  user-select: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#home .book:hover {
+  background-color: rgb(31, 31, 31);
+}
+
+#home .book h4 {
+  color: var(--text);
+}
+
+#home .book > *:not(p) {
+  flex: 0 0 auto;
+}
+
+#home .book > p {
+  flex: 1 1 auto;
+  width: 100%;
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+#home .book small {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+}
+
+#home .book small svg {
+  height: 1em;
+}
+
+#home .book .set-favorite {
+  margin-top: 1rem;
+  font-size: 0.8em;
+}
+
+#home > div + h2 {
+  margin-top: 4rem;
+}
+
+#home .book .set-favorite[is-favorite] svg {
+  fill: currentColor;
+}

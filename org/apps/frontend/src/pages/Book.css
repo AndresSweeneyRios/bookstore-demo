@@ -1,0 +1,36 @@
+#book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+#book h2 {
+  font-size: 2em;
+}
+
+#book h3 {
+  font-size: 1.4em;
+  color: var(--text);
+}
+
+
+#book small {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3em;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+#book small svg {
+  height: 1em;
+}
+
+#book p {
+  text-align: center;
+  max-width: 40em;
+  line-height: 1.5;
+}
